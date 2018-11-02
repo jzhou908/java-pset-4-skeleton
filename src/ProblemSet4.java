@@ -152,21 +152,17 @@ public class ProblemSet4 {
 		String str2 = str.substring(str.length()/2-1, str.length()/2+2);
 		String str3 = str.substring(str.length()/2-2, str.length()/2+1);
 		if (str.length()%2 == 1 && target.length() == 3 && str2.equals(target)) {
-			System.out.print("True");
 			return true;
 		}
 		else if(str.length()%2 == 0 && target.length() == 3) {
 			if(str2.equals(target) || str3.equals(target)) {
-				System.out.print("True");
 				return true;
 			}
 			else {
-				System.out.print("False");
 				return false;
 			}
 		}
 		else {
-			System.out.print("False");
 			return false;
 		}
 	}
